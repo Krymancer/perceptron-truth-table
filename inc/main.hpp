@@ -18,7 +18,7 @@ class Perceptron {
 
         std::random_device dev;
         std::mt19937 rng(dev());
-        std::uniform_real_distribution<double> dist(0.0, 1.1);
+        std::uniform_real_distribution<double> dist(0.0, 1.0);
 
         for (int i = 0; i < this->weights.size(); i++) {
             this->weights[i] = dist(rng);
